@@ -33,4 +33,5 @@ public class DayAlbum {
     private String resume;
 
     private LocalDate displayDate;
+
 }
