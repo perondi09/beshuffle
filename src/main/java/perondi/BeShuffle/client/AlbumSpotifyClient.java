@@ -12,6 +12,9 @@ import perondi.BeShuffle.dtos.album.Album;
 )
 public interface AlbumSpotifyClient {
 
-    @GetMapping(value = "/v1/albums/{id}")
-    Album getAlbum(@RequestHeader("Authorization") String authorization, @PathVariable("id") String id);
+    @GetMapping("/v1/albums/{id}")
+    Album getAlbum(
+            @RequestHeader("Authorization") String authorization,
+            @PathVariable("id") String id
+    );
 }

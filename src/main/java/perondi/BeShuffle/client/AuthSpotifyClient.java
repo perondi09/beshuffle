@@ -13,6 +13,9 @@ import perondi.BeShuffle.dtos.login.LoginResponse;
 )
 public interface AuthSpotifyClient {
 
-    @PostMapping(value = "/api/token", consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
+    @PostMapping(
+            value = "/api/token",
+            consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE
+    )
     LoginResponse login(@RequestBody LoginRequest loginRequest);
 }
