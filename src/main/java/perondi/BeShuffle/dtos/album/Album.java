@@ -7,6 +7,8 @@ import lombok.Setter;
 import tools.jackson.databind.PropertyNamingStrategies;
 import tools.jackson.databind.annotation.JsonNaming;
 
+import java.util.List;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -14,8 +16,11 @@ import tools.jackson.databind.annotation.JsonNaming;
 
 @JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
 public class Album {
-
     private String id;
     private String name;
     private String releaseDate;
+    private String href;
+    private String uri;
+    private List<AlbumImage> images;
+    private List<Artist> artists;
 }
