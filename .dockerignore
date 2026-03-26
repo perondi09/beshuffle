@@ -1,0 +1,12 @@
+.git/
+.gitignore
+.mvn/
+mvnw
+mvnw.cmd
+target/
+*.md
+src/test/
+*.log
+.env
+.DS_Store
+node_modules/
